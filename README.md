@@ -74,3 +74,5 @@ Emergency contacts
 Crime analytics
 Dashboard
 Mobile optimization
+
+SOS Module: Provides quick-access emergency actions. Direct calling functionality is intended for mobile devices and will be expanded with emergency contacts, SMS alerts, and live location sharing in future versions.
