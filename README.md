@@ -52,15 +52,75 @@ Axios
 React CountUp
 React Circular Progressbar
 Lucide React
+
 Project Structure
-src/
- ├── components/
- ├── features/
- │      └── map/
- ├── pages/
- ├── routes/
- ├── services/
- ├── utils/
+## 📂 Project Structure
+
+```text
+safe-route-ai/
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── AILoader/
+│   │   ├── Avatar/
+│   │   ├── BottomNavigation/
+│   │   ├── Button/
+│   │   ├── FloatingActionButton/
+│   │   ├── GlassCard/
+│   │   ├── GradientBlob/
+│   │   ├── Header/
+│   │   ├── NotificationToast/
+│   │   ├── SearchBar/
+│   │   ├── SOSModal/
+│   │   └── StatsCard/
+│   │
+│   ├── features/
+│   │   └── map/
+│   │       ├── BottomSheet.jsx
+│   │       ├── Directions.jsx
+│   │       ├── HeatmapLayer.jsx
+│   │       ├── IncidentMarkers.jsx
+│   │       ├── LeafletMapCanvas.jsx
+│   │       ├── LiveLocation.jsx
+│   │       ├── MapCanvas.jsx
+│   │       ├── MapControls.jsx
+│   │       └── MapLegend.jsx
+│   │
+│   ├── pages/
+│   │   ├── Dashboard/
+│   │   ├── Home/
+│   │   ├── Map/
+│   │   ├── Onboarding/
+│   │   ├── Profile/
+│   │   ├── Report/
+│   │   └── Splash/
+│   │
+│   ├── routes/
+│   │   └── AppRoutes.jsx
+│   │
+│   ├── services/
+│   │
+│   ├── utils/
+│   │   ├── darkMap.js
+│   │   ├── markerIcons.js
+│   │   ├── mapStyle.js
+│   │   └── riskCalculator.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
 Screenshots
 
 Screenshots will be added as development progresses.
