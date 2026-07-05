@@ -1,16 +1,76 @@
-# React + Vite
+SafeRoute AI 🚨
+AI-powered Safe Route Recommendation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚠️ Project Status: Work in Progress
 
-Currently, two official plugins are available:
+SafeRoute AI is an intelligent route recommendation system that aims to help users travel through safer routes by combining map navigation with AI-based safety analysis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository currently contains the first working prototype developed using React, Leaflet and OpenStreetMap.
 
-## React Compiler
+The project is actively under development and several major AI features are still being implemented.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Current Features
+Live interactive map
+Dark themed UI
+Current location detection
+Destination search
+Route visualization
+AI Safety Score simulation
+AI Route Analysis Bottom Sheet
+Risk calculation engine
+Animated UI
+Glassmorphism components
+Responsive layout
+Planned Features
+Real-time crime data integration
+Police station recommendations
+Hospital recommendations
+SOS emergency system
+Live incident reporting
+Crowd density estimation
+Weather-aware routing
+Route comparison
+AI prediction model
+Firebase backend
+User authentication
+Route history
+Notifications
+Offline support
+Tech Stack
 
-## Expanding the ESLint configuration
+Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React
+Vite
+React Leaflet
+OpenStreetMap
+Framer Motion
+
+Libraries
+
+Axios
+React CountUp
+React Circular Progressbar
+Lucide React
+Project Structure
+src/
+ ├── components/
+ ├── features/
+ │      └── map/
+ ├── pages/
+ ├── routes/
+ ├── services/
+ ├── utils/
+Screenshots
+
+Screenshots will be added as development progresses.
+
+Future Roadmap
+Heatmap visualization
+AI safety prediction
+Firebase integration
+Live alerts
+Emergency contacts
+Crime analytics
+Dashboard
+Mobile optimization
