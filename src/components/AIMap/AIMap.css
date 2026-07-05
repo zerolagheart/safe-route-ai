@@ -1,0 +1,274 @@
+.ai-map{
+
+position:relative;
+
+width:100%;
+
+height:260px;
+
+margin-bottom:35px;
+
+overflow:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+/* ====================== */
+
+.map-grid{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(
+rgba(255,255,255,.03) 1px,
+transparent 1px
+),
+
+linear-gradient(
+90deg,
+rgba(255,255,255,.03) 1px,
+transparent 1px
+);
+
+background-size:34px 34px;
+
+opacity:.35;
+
+}
+
+/* ====================== */
+
+.route-svg{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+}
+
+/* ====================== */
+
+.route-line{
+
+fill:none;
+
+stroke:#00E5FF;
+
+stroke:#00E5FF;
+
+stroke-width:5;
+
+stroke-linecap:round;
+
+stroke-dasharray:650;
+
+stroke-dashoffset:650;
+
+animation:
+
+drawRoute 4s ease forwards,
+
+routeGlow 2s infinite alternate;
+
+filter:
+
+drop-shadow(0 0 12px #00E5FF);
+
+}
+
+/* ====================== */
+
+.pin{
+
+position:absolute;
+
+width:18px;
+
+height:18px;
+
+border-radius:50%;
+
+background:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:
+
+0 0 20px #00E5FF;
+
+}
+
+.pin span{
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+background:#00E5FF;
+
+}
+
+/* ====================== */
+
+.start{
+
+left:38px;
+
+bottom:54px;
+
+animation:pulse 2s infinite;
+
+}
+
+/* ====================== */
+
+.middle{
+
+left:145px;
+
+top:108px;
+
+animation:pulse 2.4s infinite;
+
+}
+
+/* ====================== */
+
+.end{
+
+right:35px;
+
+top:48px;
+
+background:#FF4FD8;
+
+box-shadow:
+
+0 0 25px #FF4FD8;
+
+animation:pulse 1.8s infinite;
+
+}
+
+.end span{
+
+background:#FF4FD8;
+
+}
+
+/* ====================== */
+
+.scan-circle{
+
+position:absolute;
+
+width:170px;
+
+height:170px;
+
+border-radius:50%;
+
+border:1px solid rgba(0,229,255,.25);
+
+animation:
+
+scan 4s infinite;
+
+}
+
+/* ====================== */
+
+@keyframes drawRoute{
+
+to{
+
+stroke-dashoffset:0;
+
+}
+
+}
+
+/* ====================== */
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.4);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ====================== */
+
+@keyframes scan{
+
+0%{
+
+transform:scale(.4);
+
+opacity:.9;
+
+}
+
+100%{
+
+transform:scale(2);
+
+opacity:0;
+
+}
+
+}
+
+/* ====================== */
+
+@keyframes routeGlow{
+
+0%{
+
+filter:
+
+drop-shadow(0 0 10px #00E5FF);
+
+}
+
+100%{
+
+filter:
+
+drop-shadow(0 0 30px #00E5FF);
+
+}
+
+}

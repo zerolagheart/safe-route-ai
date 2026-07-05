@@ -1,0 +1,33 @@
+.severity{
+
+display:flex;
+
+gap:12px;
+
+margin:20px 0;
+
+}
+
+.severity button{
+
+flex:1;
+
+padding:16px;
+
+border:none;
+
+border-radius:16px;
+
+cursor:pointer;
+
+background:#ffffff10;
+
+color:white;
+
+}
+
+.active{
+
+background:#6C63FF!important;
+
+}

@@ -1,0 +1,39 @@
+.recommendation{
+
+margin-top:20px;
+
+padding:20px;
+
+border-radius:22px;
+
+background:linear-gradient(135deg,#6C63FF,#8679FF);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:white;
+
+box-shadow:0 12px 30px rgba(108,99,255,.35);
+
+}
+
+.recommendation h3{
+
+display:flex;
+
+gap:10px;
+
+margin-bottom:10px;
+
+align-items:center;
+
+}
+
+.recommendation svg{
+
+color:white;
+
+}

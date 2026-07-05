@@ -1,0 +1,86 @@
+.particles{
+
+position:absolute;
+
+inset:0;
+
+overflow:hidden;
+
+pointer-events:none;
+
+z-index:1;
+
+}
+
+.particles span{
+
+position:absolute;
+
+bottom:-30px;
+
+width:6px;
+
+height:6px;
+
+border-radius:50%;
+
+animation:particle linear infinite;
+
+opacity:.7;
+
+}
+
+.cyan{
+
+background:#00E5FF;
+
+box-shadow:0 0 16px #00E5FF;
+
+}
+
+.pink{
+
+background:#FF4FD8;
+
+box-shadow:0 0 16px #FF4FD8;
+
+}
+
+/* Individual particles */
+
+.p1{left:5%;animation-duration:8s;}
+.p2{left:15%;animation-duration:10s;animation-delay:1s;}
+.p3{left:25%;animation-duration:9s;animation-delay:2s;}
+.p4{left:35%;animation-duration:11s;animation-delay:1.5s;}
+.p5{left:45%;animation-duration:8s;animation-delay:3s;}
+.p6{left:58%;animation-duration:12s;animation-delay:2.5s;}
+.p7{left:68%;animation-duration:9s;animation-delay:1s;}
+.p8{left:78%;animation-duration:10s;animation-delay:4s;}
+.p9{left:88%;animation-duration:8s;animation-delay:2s;}
+.p10{left:95%;animation-duration:11s;animation-delay:5s;}
+
+@keyframes particle{
+
+0%{
+
+transform:translateY(0) scale(.5);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:.8;
+
+}
+
+100%{
+
+transform:translateY(-900px) scale(1.4);
+
+opacity:0;
+
+}
+
+}

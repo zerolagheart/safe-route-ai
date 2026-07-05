@@ -1,0 +1,41 @@
+.input-box{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:16px 20px;
+
+border-radius:16px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+.input-box input{
+
+flex:1;
+
+background:none;
+
+border:none;
+
+outline:none;
+
+color:white;
+
+font-size:16px;
+
+}
+
+.input-box svg{
+
+color:#8ea2ff;
+
+}

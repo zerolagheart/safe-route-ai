@@ -1,0 +1,31 @@
+.safety-banner{
+
+background:#e8fff2;
+
+padding:18px;
+
+display:flex;
+
+gap:18px;
+
+border-radius:20px;
+
+margin-top:18px;
+
+align-items:center;
+
+}
+
+.safety-banner svg{
+
+color:#0bb36d;
+
+}
+
+.safety-banner h3{
+
+color:#111;
+
+margin-bottom:4px;
+
+}

@@ -1,0 +1,55 @@
+.weather-card{
+
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+
+padding:22px;
+
+border-radius:25px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:white;
+
+box-shadow:0 15px 40px rgba(0,170,255,.25);
+
+animation:fadeUp .6s;
+
+}
+
+.weather-card h3{
+
+font-size:38px;
+
+margin-bottom:5px;
+
+}
+
+.weather-card p{
+
+opacity:.9;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}

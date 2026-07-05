@@ -1,0 +1,27 @@
+.floating-button{
+    position: fixed;
+    right: 25px;
+    bottom: 220px;
+
+    width:72px;
+    height:72px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#7C5CFC,#8B5CF6);
+
+    color:white;
+    font-size:22px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:999999;
+
+    pointer-events:auto;
+}

@@ -1,0 +1,379 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+/* ===========================
+   CSS Variables
+=========================== */
+
+:root{
+
+  --bg:#05060B;
+  --card:#0D111C;
+  --surface:#121826;
+
+  --cyan:#19E5FF;
+  --pink:#FF4FD8;
+  --purple:#7B61FF;
+
+  --text:#FFFFFF;
+  --secondary:#AAB3C5;
+
+  --border:rgba(255,255,255,.08);
+
+}
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  font-family:"Manrope",sans-serif;
+
+  background:
+  radial-gradient(circle at top left,
+  rgba(25,229,255,.12),
+  transparent 35%),
+
+  radial-gradient(circle at bottom right,
+  rgba(255,79,216,.12),
+  transparent 40%),
+
+  radial-gradient(circle at center,
+  rgba(123,97,255,.08),
+  transparent 60%),
+
+  var(--bg);
+
+  color:var(--text);
+
+  overflow-x:hidden;
+
+  min-height:100vh;
+
+}
+
+/* ===========================
+   Root
+=========================== */
+
+#root{
+
+  width:100%;
+  min-height:100vh;
+
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection{
+
+  background:var(--cyan);
+  color:black;
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+  width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+  background:#090909;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:linear-gradient(
+  180deg,
+  var(--cyan),
+  var(--pink)
+  );
+
+  border-radius:999px;
+
+}
+
+/* Firefox */
+
+*{
+
+  scrollbar-width:thin;
+  scrollbar-color:var(--cyan) #090909;
+
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+
+  color:inherit;
+  text-decoration:none;
+
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img{
+
+  width:100%;
+  display:block;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button{
+
+  font-family:inherit;
+
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+input,
+textarea{
+
+  font-family:inherit;
+
+}
+
+/* ===========================
+   Glass Effect
+=========================== */
+
+.glass{
+
+  background:rgba(14,20,34,.72);
+
+  backdrop-filter:blur(24px);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  border-radius:28px;
+
+}
+
+/* ===========================
+   Gradient Text
+=========================== */
+
+.gradient-text{
+
+  background: linear-gradient(
+    90deg,
+    var(--cyan),
+    var(--pink)
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+}
+
+/* ===========================
+   Glow Utility
+=========================== */
+
+.glow{
+
+  box-shadow:
+
+  0 0 30px rgba(25,229,255,.25),
+
+  0 0 70px rgba(255,79,216,.15);
+
+}
+
+/* ===========================
+   Floating Animation
+=========================== */
+
+@keyframes float{
+
+  0%{
+
+    transform:translateY(0);
+
+  }
+
+  50%{
+
+    transform:translateY(-10px);
+
+  }
+
+  100%{
+
+    transform:translateY(0);
+
+  }
+
+}
+
+/* ===========================
+   Pulse Animation
+=========================== */
+
+@keyframes pulse{
+
+  0%{
+
+    transform:scale(1);
+
+    opacity:1;
+
+  }
+
+  50%{
+
+    transform:scale(1.08);
+
+    opacity:.75;
+
+  }
+
+  100%{
+
+    transform:scale(1);
+
+    opacity:1;
+
+  }
+
+}
+
+/* ===========================
+   Fade Up
+=========================== */
+
+@keyframes fadeUp{
+
+  from{
+
+    opacity:0;
+    transform:translateY(30px);
+
+  }
+
+  to{
+
+    opacity:1;
+    transform:translateY(0);
+
+  }
+
+}
+
+/* ===========================
+   Neon Border
+=========================== */
+
+.neon-border{
+
+  border:1px solid rgba(25,229,255,.25);
+
+  box-shadow:
+
+  inset 0 0 20px rgba(25,229,255,.06),
+
+  0 0 30px rgba(25,229,255,.10);
+
+}
+
+/* ===========================
+   Mobile Container
+=========================== */
+
+.mobile-container{
+
+  width:100%;
+
+  max-width:430px;
+
+  min-height:100vh;
+
+  margin:auto;
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+/* ===========================
+   Page Transition
+=========================== */
+
+.page{
+
+  animation:fadeUp .7s ease;
+
+}
+
+/* ===========================
+   Utility Classes
+=========================== */
+
+.flex{
+
+  display:flex;
+
+}
+
+.center{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+.column{
+
+  display:flex;
+
+  flex-direction:column;
+
+}
+
+.text-center{
+
+  text-align:center;
+
+}

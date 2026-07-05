@@ -1,0 +1,425 @@
+/* ==========================================
+   Onboarding Page
+========================================== */
+
+.onboarding{
+
+    position:relative;
+
+    overflow:hidden;
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:28px;
+
+    background:#050816;
+
+}
+
+/* ==========================================
+   Glass Card
+========================================== */
+
+.onboarding .glass-card{
+
+    position:relative;
+
+    z-index:5;
+
+    width:100%;
+
+    max-width:390px;
+
+    min-height:720px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    padding:34px;
+
+    border-radius:34px;
+
+    background:rgba(16,24,39,.72);
+
+    backdrop-filter:blur(30px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.45),
+    0 0 60px rgba(0,229,255,.08),
+    0 0 100px rgba(255,79,216,.06);
+
+    overflow:hidden;
+
+}
+
+/* ==========================================
+   Skip Button
+========================================== */
+
+.skip{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-bottom:12px;
+
+}
+
+.skip button{
+
+    background:none;
+
+    border:none;
+
+    color:#AAB2C5;
+
+    font-size:.95rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.skip button:hover{
+
+    color:white;
+
+}
+
+/* ==========================================
+   Illustration
+========================================== */
+
+.illustration{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:10px;
+
+    margin-bottom:28px;
+
+    animation:floatIllustration 6s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   Content
+========================================== */
+
+.content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ==========================================
+   Heading
+========================================== */
+
+.content h1{
+
+    color:white;
+
+    font-size:2.35rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    letter-spacing:-1px;
+
+}
+
+/* Gradient Highlight */
+
+.content h1 span{
+
+    background:linear-gradient(
+    90deg,
+    #00E5FF,
+    #8B5CF6,
+    #FF4FD8
+    );
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* ==========================================
+   Description
+========================================== */
+
+.content p{
+
+    color:#AAB2C5;
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+   Bottom Section
+========================================== */
+
+.bottom{
+
+    margin-top:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+/* ==========================================
+   Progress Dots
+========================================== */
+
+.dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#444;
+
+    transition:.35s;
+
+}
+
+.dot.active{
+
+    width:42px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+    90deg,
+    #00E5FF,
+    #FF4FD8
+    );
+
+    box-shadow:
+    0 0 18px rgba(0,229,255,.5);
+
+}
+
+/* ==========================================
+   CTA Button
+========================================== */
+
+.primary-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    background:linear-gradient(
+    135deg,
+    #00E5FF,
+    #8B5CF6,
+    #FF4FD8
+    );
+
+    background-size:250%;
+
+    animation:gradientMove 8s linear infinite;
+
+    transition:.35s;
+
+    box-shadow:
+    0 20px 40px rgba(0,229,255,.18);
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 28px 60px rgba(0,229,255,.25);
+
+}
+
+/* ==========================================
+   Decorative Blur
+========================================== */
+
+.glass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    right:-100px;
+
+    width:220px;
+
+    height:220px;
+
+    background:#00E5FF;
+
+    opacity:.15;
+
+    filter:blur(90px);
+
+    border-radius:50%;
+
+}
+
+.glass-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-120px;
+
+    left:-100px;
+
+    width:220px;
+
+    height:220px;
+
+    background:#FF4FD8;
+
+    opacity:.12;
+
+    filter:blur(90px);
+
+    border-radius:50%;
+
+}
+
+/* ==========================================
+   Animations
+========================================== */
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:left;
+
+    }
+
+    100%{
+
+        background-position:right;
+
+    }
+
+}
+
+@keyframes floatIllustration{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:430px){
+
+    .onboarding{
+
+        padding:16px;
+
+    }
+
+    .onboarding .glass-card{
+
+        min-height:100vh;
+
+        border-radius:0;
+
+        max-width:100%;
+
+        padding:28px;
+
+    }
+
+    .content h1{
+
+        font-size:2rem;
+
+    }
+
+}
